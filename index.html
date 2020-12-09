@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edutech Startup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+    .navbar-nav > li{
+  padding-left:40px;
+  padding-right:40px;
+  font-weight: bold;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 170%;
+    color: blue;
+}
+h1{
+    font-weight:bold;
+    font-family: arial black;
+    color:#404040;
+}
+.container{
+    margin-top:1vw;
+    margin-left:5vw;
+}
+@media screen and (max-width: 600px) {
+
+.card {
+       width: 100%;
+
+}
+    .d-flex flex-row mb-3 {
+  flex-direction: column;
+}
+}
+.card{
+    height:auto;
+    width:8vw;
+    border-radius: 40px;
+    text-align: center;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-deck{
+    
+   padding-left: 15vh;
+   padding-right: 15vh;
+    height:auto;
+    padding-top: 10vh;
+    width:100%;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  margin: 0 -15px;
+    justify-content: space-between;
+    
+}
+
+p{
+    font-weight:bold;
+    font-family: arial black;
+    color:#4d4d4d;
+    font-size: 13px;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (min-width: 576px){
+.pl-md-5, .px-md-5 {
+    padding-left: 3rem!important;
+}
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.card {
+         width: 100%;
+         height:auto;
+         
+
+  }
+  .d-flex flex-row mb-3 {
+    flex-direction: column;
+  }
+  .card-deck {
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+.card-deck> .card {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+}
+}
+.card-deck> .card {
+ 
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+
+  
+}
+.card-footer{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: 500;
+letter-spacing: 2px;
+text-align: center;
+background-color: #00b359;
+padding: .75rem 1.25rem;
+
+}
+.d-flex flex-row mb-3{
+  display: flex;
+  flex-direction: row;
+}
+}
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+.modal-video-placeholder {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.card-text{
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#card-deck{
+    padding-left: 10vh;
+   padding-right: 10vh;
+    height:auto;
+    padding-top: 10vh;
+    color:#404040; 
+}
+.card mb-4{
+    min-height: 100px;
+    min-width: 1000px;
+}
+
+
+</style>
+</head>
+<body>
+<section id="s1">
+    <nav class="navbar navbar-light bg-light navbar-expand-lg">
+        <a class="navbar-brand text-primary" href="#">
+          <img src="logo2.jpg" width="40" height="40" class="d-inline-block align-center" alt="">
+          Coursify
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Live Clases </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Video Library</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Course</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Book</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Board</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Exam</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="container-fluid ">
+        <div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen">
+        <div class="col-lg-6 col-12" style="padding-left: 1vw;">
+            <br><br><br>
+        <h1>Clarify your <span style="color:navy;"> doubts</span><br>in your language.</h1>
+        <br><br>
+        <button class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;"><i class="fa fa-download text-light"></i> Ask Your doubt now </button>
+     <br><br> </div>
+     <div class="col-lg-6 col-12" >
+        <div class="modal-video-placeholder" id="tsetModal">
+            <img src="video.png" class="img-fluid modal-video-placeholder-img" style="height:auto;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        </div> </div></div></div>
+     
+                <div class="card-deck" id="card-deck">
+                    <div class="card mb-4" style="min-width: 20vw;min-height: 10vh;">
+                        <div class="row no-gutters">
+                            <div class="col-auto">
+                                <img src="c1.png" class="img-fluid" alt=""  width="100vh" style="min-width: 10vh;" >
+                            </div>
+                            <div class="col" >
+                                <div class="card-block px-2" >
+                                    <p class="card-text" style="text-align:center;margin-top:3vh;    font-weight:bold;
+                                    font-family: arial black;
+                                    color:#404040;">40,000+<br>Doubts Cleared</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                  </div> 
+                  <div class="card mb-4" style="min-width: 20vw;">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img src="c2.png" class="img-fluid" alt=""  width="100vh">
+                        </div>
+                        <div class="col">
+                            <div class="card-block px-2">
+                                <p class="card-text" style="text-align:center;margin-top:3vh;    font-weight:bold;
+                                font-family: arial black;
+                                color:#404040;">20+<br>State Boards</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+              </div> 
+  
+              <div class="card mb-4" style="min-width: 20vw;">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="c3.png" class="img-fluid" alt=""  width="100vh">
+                    </div>
+                    <div class="col">
+                        <div class="card-block px-2">
+                            <p class="card-text" style="text-align:center;margin-top:3vh;    font-weight:bold;
+                            font-family: arial black;
+                            color:#404040;">1,000,000+<br>Video Lectures</p>
+                            
+                        </div>
+                    </div>
+                </div>
+          </div> 
+          <div class="card mb-4" style="min-width: 20vw;">
+            <div class="row no-gutters">
+                <div class="col-auto">
+                    <img src="c4.png" class="img-fluid" alt=""  width="100vh">
+                </div>
+                <div class="col">
+                    <div class="card-block px-2">
+                        <p class="card-text" style="text-align:center;margin-top:3vh;    font-weight:bold;
+                        font-family: arial black;
+                        color:#404040;">5,000+<br>Books Covered</p>    
+                    </div>
+                </div>
+            </div>
+      </div> 
+</div>
+</div>
+</section>
+<section id="s2" style="padding-top:15vh;">
+<h1 style="padding-left: 5vw;">Solve your doubts <span style="color:navy;"> faster.</span></h1>
+<div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen">
+<div class="col-lg-6 col-12">
+<div style="display:block;padding-top:5vh;">
+    <img src="s2a.png" class="img-fluid" height="60vh" width="60vw" style="display:inline-block;margin-right:10px;">
+    <p style="font-size: 25px;display:inline-block;font-family: Arial, Helvetica, sans-serif;">Accessible everywhere</p><br>
+    <p style="padding-left: 9.5vh;color: #A9A9A9;font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Access to quality education anytime,<br>anywhere.</p>
+</div>
+<br>
+<div style="display:block;padding-top:5vh;">
+    <img src="s2b.png" class="img-fluid" height="60vh" width="60vw" style="display:inline-block;margin-right:10px;">
+    <p style="font-size: 20px;display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: 2rem;">1 million+ videos</p>
+    <p style="padding-left: 9.5vh;color: #A9A9A9;font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Unlimited access to video solutions.</p>    
+</div></div>
+<div class="col-lg-6 col-12">
+<img src="s2c.jpg" style="margin-left:80vh;"  align="Right" class="img-fluid" >
+</div></div>
+<h2 align="center" style="color:navy;font-weight: bold;"> How it works?</h2>
+<div class="conatiner" style="padding-top: 2vh;padding-bottom: 2vh;">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+        <div class="p-2 "><img src="think.png"class="rounded-circle" width="220vw"  style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+        <br><p style="font-family: Arial, Helvetica, sans-serif;text-align: center;padding-top: 2vh;font-size: 1.5rem;">Have a doubt?</p></div></div>
+        <div class="col col-lg-2">
+        <div class="p-2  align-self-center"><p style="color: black;font-size: 4rem;padding-top: 5vh;padding-left: 3vw;font-weight: bold;"><i style="font-size:32px" class="fa">&#xf054;</i></p></div>
+    </div>
+    
+        <div class="col col-lg-2">
+        <div class="p-2 "><img src="br1.jpg"class="rounded-circle" width="220vw" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);max-width:120%;" >
+        <br><p style="font-family: Arial, Helvetica, sans-serif;text-align: center;padding-top: 2vh;font-size: 1.5rem;color: navy;">Type your question<br>OR<br>Upload an image</p></div></div>
+        <div class="col col-lg-2">
+        <div class="p-2  align-self-center"><p style="color: black;font-size: 4rem;font-weight: bold;padding-top: 5vh;padding-left: 3vw;"><i style="font-size:32px" class="fa">&#xf054;</i></p></div>
+    </div>
+    
+        <div class="col col-lg-2">
+        <div class="p-2 "><img src="soln.png"  class="rounded-circle" width="220vw" style="max-width: 100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+        <br><p style="font-family: Arial, Helvetica, sans-serif;text-align: center;padding-top: 2vh;font-size: 1.5rem;">Get your Solution!</p></div></div>
+    </div>
+</div>
+<p style="font-family: Arial, Helvetica, sans-serif;" align="center"><button  class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;">Clarify your doubts now!</button></p>
+</section>
+<section id="liveclass" style="padding-top: 15vh;">
+    <h1 align="center"><span style="color: navy;">LIVE</span>  classes</h1>
+    <div class="container-fluid ">
+        <div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen" style="padding-top: 15vh;">
+     <div class="col-lg-6 col-12">
+    <div class="modal-video-placeholder" id="tsetModal">
+        <img src="liveclass.png" class="img-fluid modal-video-placeholder-img" width="100%" style="height:auto;widows: 100px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    </div> </div>
+    <div class="col-lg-6 col-12" style="padding-top: 4vh;padding-left: 10vw;" >
+        <div style="display:block;">
+            <img src="s2a.png" class="img-fluid" height="60vh" width="60vw" style="display:inline-block;margin-right:10px;">
+            <p style="font-size: 20px;display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: 2rem;">Accessible everywhere</p><br>
+            <p style="padding-left: 9.5vh;color: #A9A9A9;font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Access to quality education anytime,<br>anywhere.</p>
+        </div>
+        <br>
+        <div style="display:block;">
+            <img src="teach.png" class="img-fluid" height="60vh" width="60vw" style="display:inline-block;margin-right:10px;">
+            <p style="font-size: 20px;display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: 2rem;">Expert Teacher</p>
+            <p style="padding-left: 9.5vh;color: #A9A9A9;font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Unlimited access to video solutions.</p>    
+        </div>
+        <br>
+        <div style="display:block;">
+            <img src="s2b.png" class="img-fluid" height="60vh" width="60vw" style="display:inline-block;margin-right:10px;">
+            <p style="font-size: 20px;display:inline-block;font-family: Arial, Helvetica, sans-serif;font-size: 2rem;">Interactive sessions</p>
+            <p style="padding-left: 9.5vh;color: #A9A9A9;font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Small groups for maximum teacher-student interaction</p>    
+        </div>
+    </div>
+</div>
+<h1 align="center" style="color: navy;">FIRST CLASS FREE!</h1><br>
+<p style="font-family: Arial, Helvetica, sans-serif;" align="center"><button class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;">Book a class now!</button></p>
+</div>
+
+</section>
+<section id="JEE">
+    <div class="container-fluid" style="padding-top: 15vh;">
+        <h1 align="center"><span style="color: navy;">JEE</span> Mains and Advanced Preperation</h1>
+    <div class="container-fluid ">
+        <div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen" style="padding-top: 15vh;">
+     <div class="col-lg-6 col-12">
+    <div class="modal-video-placeholder" id="tsetModal">
+        <img src="jee.png" class="img-fluid modal-video-placeholder-img" style="height:auto;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    </div> </div>
+    <div class="col-lg-6 col-12" style="padding-left: 10vw;padding-top: 13vh;" >
+        <p style="color: navy;font-size: 2rem;">Micro concept videos</p><br>
+        <p style="color:#A9A9A9 ;font-family: Arial, Helvetica, sans-serif;font-size: 25px;">Find multilingual video <br> explanations important and <br>frequently confused <br> concepts from every subject.</p>
+    </div>
+</div>
+<h1 align="center" style="color:#A9A9A9;font-size: 50px;font-family: Georgia, 'Times New Roman', Times, serif;"><span style="color: navy;">.</span> . .</h1><br>
+<p style="font-family: Arial, Helvetica, sans-serif;" align="center"><button class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;">Prepare for JEE now</button></p>
+</div>
+
+    </div>
+</section>
+<section id="NEET">
+    <div class="container-fluid" style="padding-top: 15vh;">
+        <h1 align="center" ><span style="color: navy;">NEET</span> Preperation</h1>
+    <div class="container-fluid ">
+        <div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen" style="padding-top: 15vh;">
+     <div class="col-lg-6 col-12">
+    <div class="modal-video-placeholder" id="tsetModal">
+        <img src="jee.png" class="img-fluid modal-video-placeholder-img" style="height:auto;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    </div> </div>
+    <div class="col-lg-6 col-12" style="padding-left: 10vw;padding-top: 13vh;" >
+        <p style="color: navy;font-size: 2rem;">Micro concept videos</p><br>
+        <p style="color:#A9A9A9 ;font-family: Arial, Helvetica, sans-serif;font-size: 25px;">Find multilingual video <br> explanations important and <br>frequently confused <br> concepts from every subject.</p>
+    </div>
+</div>
+<h1 align="center" style="color:#A9A9A9;font-size: 50px;font-family: Georgia, 'Times New Roman', Times, serif;"><span style="color: navy;">.</span> . .</h1><br>
+<p style="font-family: Arial, Helvetica, sans-serif;" align="center"><button class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;">Prepare for NEET now</button></p>
+</div>
+
+    </div>
+</section>
+<section id="subjects" style="padding-top: 10vh;">
+    <h1 align="center" style="color: navy;">Explore the subjects with us!</h1>
+    <div class="container-fluid">
+        
+        <div class="card-deck" style="padding-left: 10vw;padding-right: 10vw;padding-bottom: 5vh;">
+            <div class="card bg-light" style="border-radius: 5px;height: 25vh;width: 55vw;">
+                <img class="card-img-top" style="height:20vh;width: 100%;" src="math.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Maths</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;height: 25vh;width: 55vw;">
+                <img class="card-img-top" style="height:20vh;width: 100%;" src="physics.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">physics</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;height: 25vh;width: 55vw;">
+                <img class="card-img-top" style="height:20vh;width: 100%;" src="chemistry.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Chemistry</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;height: 25vh;width: 55vw;">
+                <img class="card-img-top" style="height:20vh;width: 100%;" src="biology.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Biology</p>
+            </div>
+        </div>
+        
+    </div><br>
+    <div class="container-fluid" style="padding-top: 5vh;padding-left: 83vw;">
+    <p style="color: crimson;font-family: Arial, Helvetica, sans-serif;font-weight: lighter;text-align: right;padding-right: 12vw;">View all</p></div>
+</section>
+<section id="books" style="padding-top: 10vh;">
+    <h1 align="center"><span style="color: navy;">Free access</span> to 5000+ books </h1>
+    <p align="center" style="font-family: Arial, Helvetica, sans-serif;">Get access to virtual library of 5000+ text books <br>and reference books of various stateboards and competitive exams.</p>
+    <div class="container-fluid">
+        <div class="card-deck">
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;min-width: 100%;" src="book1.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">HC Verma</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book2.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">NCERT</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book7.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">KC Sinha</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book4.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Errorless</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book5.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Tata McGraw Hill</p>
+            </div></div>
+            <div class="card-deck" style="padding-bottom: 10vh;">
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book6.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">RD Sharma</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book5.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Padeep's</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book8.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">SL Arora</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="book5.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Maths</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="math.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Biology</p>
+            </div>
+          </div>
+    </div>
+
+</section>
+<section id="stateboards" style="padding-top: 10vh;">
+    <h1 align="center"><span style="color: navy;">State Boards</span> </h1><br>
+    <p align="center" style="font-family: Arial, Helvetica, sans-serif;font-size: 1rem;">Learn your board syllabus from the best teachers with us.</p>
+    <div class="container-fluid">
+        <div class="card-deck">
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="maharashtra.jpg" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Maharashtra</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="punjab.jpg" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Punjab</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="andhrapradesh.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Andhra Pradesh</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="WB.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">West Bengal</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="UP.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Uttar Pradesh</p>
+            </div></div>
+            <div class="card-deck" style="padding-bottom: 10vh;">
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;width: 100%;" src="kerela.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Kerela</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;min-width: 100%;" src="rajasthan.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Rajasthan</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;min-width: 100%;" src="Gujarat.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Gujarat</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;min-width: 100%;" src="TN.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Tamil Nadu</p>
+            </div>
+            <div class="card bg-light" style="border-radius: 5px;min-height:20vh;width:45vw;">
+                <img class="card-img-top" style="height: 15vh;min-width: 100%;" src="bihar.png" alt="Card image">
+                <p class="card-text" style="color: navy;font-size: 1rem;">Bihar</p>
+            </div>
+          </div>
+    </div>
+
+</section>
+<section>
+    <h1 align="center">Meet our expert tutors</h1><br>
+    <div class="row" style="padding-top: 10vh;" >
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="teacher.png" class="rounded-circle" >
+                </div>
+                <div class="col-md-2" >
+                    <div class="card bg-light" style="border-radius: 10px;width: 25vw;min-height: 20vh;max-width: 40vw;max-height: 40vh;">
+
+                        <div class="card-text" style="text-align: center;font-weight: bold;padding-top: 3vh;font-size: 1.5rem;"><span style="font-weight: bolder;"> Shivani Arora</span><br>
+                        <p>Lorem ipsum ahds<br>KJDHkdjeurf<br>USGYjdgwu</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="teacher.png" class="rounded-circle"  >
+                </div>
+                <div class="col-md-2">
+                    <div class="card bg-light" style="border-radius: 10px;width: 25vw;min-height: 20vh;max-width: 40vw;max-height: 40vh;">
+                        <div class="card-text" style="text-align: center;font-weight: bold;padding-top: 3vh;font-size: 1.5rem;"><span style="font-weight: bolder;"> Shivani Arora</span><br>
+                        <p>Lorem ipsum ahds<br>KJDHkdjeurf<br>USGYjdgwu</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="row" style="padding-left: 10vw;padding-top: 10vh;" >
+        <div class="col-md-6">
+            <div class="row">
+                <div class=" col-md-4">
+                    <img src="teacher.png" class="rounded-circle" >
+                </div>
+                <div class="col-md-2">
+                    <div class="card bg-light" style="border-radius: 10px;width: 25vw;min-height: 20vh;max-width: 40vw;max-height: 40vh;">
+
+                        <div class="card-text" style="text-align: center;font-weight: bold;padding-top: 3vh;font-size: 1.5rem;"><span style="font-weight: bolder;"> Shivani Arora</span><br>
+                        <p>Lorem ipsum ahds<br>KJDHkdjeurf<br>USGYjdgwu</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="teacher.png" class="rounded-circle"  >
+                </div>
+                <div class="col-md-2">
+                    <div class="card bg-light" style="border-radius: 10px;width: 25vw;min-height: 20vh;max-width: 40vw;max-height: 40vh;">
+                        <div class="card-text" style="text-align: center;font-weight: bold;padding-top: 3vh;font-size: 1.5rem;"><span style="font-weight: bolder;"> Shivani Arora</span><br>
+                        <p>Lorem ipsum ahds<br>KJDHkdjeurf<br>USGYjdgwu</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</section> 
+<section>
+
+    <div class="container-fluid" style="padding-top: 15vh;">
+        <h1 align="center">See what our students have to say</h1>
+        <div class="row py-5 px-md-5 px-1 wow slideInUp widthlargescreen" style="padding-top: 15vh;">
+     <div class="col-lg-6 col-12">
+    <div class="modal-video-placeholder" id="tsetModal">
+        <img src="video.png" class="img-fluid modal-video-placeholder-img" style="height:auto;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+    </div> </div>
+    <div class="col-lg-6 col-12" style="padding-left: 1vw;padding-top: 13vh;" >
+        <div class="row">
+            <div class="col-md-6">
+                <img src="teacher.png" class="rounded-circle"  >
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light" style="border-radius: 10px;width: 25vw;min-height: 20vh;max-width: 40vw;max-height: 40vh;">
+                    <div class="card-text" style="text-align: center;font-weight: bold;padding-top: 3vh;font-size: 1.5rem;"><span style="font-weight: bolder;"> Shivani Arora</span><br>
+                    <p>Lorem ipsum ahds<br>KJDHkdjeurf<br>USGYjdgwu</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p style="font-family: Arial, Helvetica, sans-serif;" align="center"><button class="btn  bg-danger text-light" style="border-radius: 12px;text-align: center;">Download our free app now</button></p>
+</div>
+</section>           
+</body>    
+</html>
